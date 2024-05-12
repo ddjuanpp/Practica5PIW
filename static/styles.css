@@ -1,0 +1,106 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh;
+  background-color: #00003f;
+  background-size: cover;
+  background-position: center;
+
+}
+title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #00007d;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 1rem;
+  animation: box-color 2s infinite;
+
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+.PelisMenu{
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+.Peli-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.Peli-Card {
+  color: white;
+  border: 5px solid;
+  animation: border-color 2s infinite, box-color 2s infinite;
+  background-color: #00007d; ;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.Peli-Card:hover {
+  transform: scale(1.005);
+}
+.Busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 95%;
+  padding: 1rem;
+  background-color: #00007d;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  animation: border-color 2s infinite, box-color 2s infinite;
+}
+@keyframes border-color {
+  0% {
+    border-color: #8B4513;
+  }
+  25% {
+    border-color: #A0522D;
+  }
+  50% {
+    border-color: #D2691E;
+  }
+  75% {
+    border-color: #A0522D;
+  }
+  100% {
+    border-color: #8B4513;
+  }
+}
+
+@keyframes box-color {
+  0% {
+    box-shadow: #8B4513 0px 0px 20px;
+  }
+  25% {
+    box-shadow: #A0522D 0px 0px 20px;
+  }
+  50% {
+    box-shadow: #D2691E 0px 0px 20px;
+  }
+  75% {
+    box-shadow: #A0522D 0px 0px 20px;
+  }
+  100% {
+    box-shadow: #8B4513 0px 0px 20px;
+  }
+}
